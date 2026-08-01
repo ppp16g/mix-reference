@@ -1,0 +1,61 @@
+site_name: ミックス・リファレンス
+site_description: 自分の曲をミックスするための作業中参照ドキュメント
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: ダークモードへ
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードへ
+plugins:
+  - search:
+      lang: ja
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - toc:
+      permalink: true
+nav:
+  - はじめに: index.md
+  - 準備:
+    - 01. 準備とモニタリング: 01-monitoring.md
+    - 02. 下ごしらえ（整音と整理）: 02-prep.md
+    - 03. ミックスの手順と設計: 03-workflow.md
+  - 処理の道具:
+    - 04. EQ: 04-eq.md
+    - 05. コンプとダイナミクス: 05-compression.md
+    - 06. ダイナミックEQとサイドチェイン: 06-dynamic-eq.md
+    - 07. サチュレーションと音の密度: 07-saturation.md
+    - 08. 定位とステレオイメージ: 08-stereo.md
+    - 09. 空間系（リバーブとディレイ）: 09-reverb-delay.md
+    - 10. オートメーション: 10-automation.md
+  - パート別:
+    - 11. 低域（キックとベース）: 11-low-end.md
+    - 12. ドラム: 12-drums.md
+    - 13. ボーカル: 13-vocals.md
+    - 14. ギター・シンセ・鍵盤: 14-guitar-synth-keys.md
+    - 15. バス構成とミックスバス: 15-bus.md
+  - 仕上げ:
+    - 16. トラブル逆引き: 16-troubleshooting.md
+    - 17. チェックリストと書き出し: 17-checklist.md
+    - 18. マスタリングとラウドネス: 18-mastering.md
