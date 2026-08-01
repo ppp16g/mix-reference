@@ -11,6 +11,8 @@ theme:
     - search.highlight
     - content.code.copy
     - toc.follow
+    - navigation.indexes
+    - content.tooltips
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -31,6 +33,9 @@ plugins:
       lang: ja
 markdown_extensions:
   - admonition
+  - md_in_html
+  - footnotes
+  - pymdownx.details
   - tables
   - attr_list
   - toc:
@@ -39,23 +44,43 @@ nav:
   - はじめに: index.md
   - 準備:
     - 01. 準備とモニタリング: 01-monitoring.md
+    - 01a. スピーカー設置と部屋の対処: 01a-room.md
+    - 01b. ゲインステージングの実務: 01b-gain-staging.md
+    - 01c. リファレンス曲の使い方: 01c-reference.md
     - 02. 下ごしらえ（整音と整理）: 02-prep.md
+    - 02a. 位相合わせの実践: 02a-phase.md
+    - 02b. 編集とノイズ処理の実務: 02b-editing.md
     - 03. ミックスの手順と設計: 03-workflow.md
+    - 03a. セッションテンプレート: 03a-template.md
   - 処理の道具:
     - 04. EQ: 04-eq.md
+    - 04a. 楽器別EQの出発点: 04a-eq-recipes.md
+    - 04b. 問題帯域の見つけ方: 04b-finding.md
     - 05. コンプとダイナミクス: 05-compression.md
+    - 05a. 楽器別コンプ設定の出発点: 05a-comp-recipes.md
+    - 05b. パラレル処理の実践: 05b-parallel.md
     - 06. ダイナミックEQとサイドチェイン: 06-dynamic-eq.md
+    - 06a. サイドチェイン実践レシピ: 06a-sidechain-recipes.md
     - 07. サチュレーションと音の密度: 07-saturation.md
+    - 07a. サチュレーション実践: 07a-saturation-practice.md
     - 08. 定位とステレオイメージ: 08-stereo.md
+    - 08a. 編成別の定位プラン: 08a-panning.md
     - 09. 空間系（リバーブとディレイ）: 09-reverb-delay.md
+    - 09a. 空間設計の実例: 09a-space-design.md
     - 10. オートメーション: 10-automation.md
+    - 10a. オートメーション実践: 10a-automation-practice.md
   - パート別:
     - 11. 低域（キックとベース）: 11-low-end.md
+    - 11a. キックとベースの実践手順: 11a-kick-bass.md
     - 12. ドラム: 12-drums.md
+    - 12a. ドラム処理チェーンの実例: 12a-drum-chain.md
     - 13. ボーカル: 13-vocals.md
+    - 13a. ボーカルチェーンの実例: 13a-vocal-chain.md
     - 14. ギター・シンセ・鍵盤: 14-guitar-synth-keys.md
     - 15. バス構成とミックスバス: 15-bus.md
+    - 15a. ルーティングの実例: 15a-routing.md
   - 仕上げ:
     - 16. トラブル逆引き: 16-troubleshooting.md
     - 17. チェックリストと書き出し: 17-checklist.md
     - 18. マスタリングとラウドネス: 18-mastering.md
+    - 18a. ラウドネスと配信の実務: 18a-loudness.md
